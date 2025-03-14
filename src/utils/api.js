@@ -9,7 +9,7 @@ const options = {
     gl: 'US'
   },
   headers: {
-    'x-rapidapi-key': "2a72455b55msh35647596cd8e311p132da1jsn509068c84d7f",
+    'x-rapidapi-key': "02872999ebmshd7f55e3cea1906fp1d6f7bjsn2c6359ba9885",
     'x-rapidapi-host': 'youtube138.p.rapidapi.com'
   }
 };
