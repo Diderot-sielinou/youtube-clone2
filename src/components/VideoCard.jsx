@@ -7,8 +7,8 @@ import VideoLength from "../shared/videoLength";
 export default function VideoCard({video}) {
   return (
     <Link to={`/video/${video?.videoId}`}>
-    <div className="flex flex-col mb-8">
-        <div className="relative h-48  md:h-40 md:rounded-xl overflow-hidden">
+    <div className="flex flex-col mb-8 w-full">
+        <div className="relative h-48  md:h-40 md:rounded-xl overflow-hidden w-full">
             <img
                 className="h-full w-full object-cover"
                 src={video?.thumbnails[0]?.url}
@@ -17,7 +17,7 @@ export default function VideoCard({video}) {
                 <VideoLength time={video?.lengthSeconds} />
             )}
         </div>
-        <div className="flex text-white mt-3">
+        <div className="flex text-white mt-3 p-5 md:p-0">
             <div className="flex items-start">
                 <div className="flex h-9 w-9 rounded-full overflow-hidden">
                     <img
