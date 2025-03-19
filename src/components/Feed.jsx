@@ -16,7 +16,7 @@ export default function Feed() {
     <div className="flex flex-row h-[calc(100%-56px)]">
       <LeftNav />
       <div className="grow w-[calc(100%-240px)] h-full overflow-y-auto bg-black justify-center mx-auto">
-        <div className=" text-amber-50 px-5 mb-3 sticky top-0 z-12">
+        <div className=" text-amber-50 md:px-5 mb-3 sticky top-0 z-12">
           <Scroll/>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:p-5">
