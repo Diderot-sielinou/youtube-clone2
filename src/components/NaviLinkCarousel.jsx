@@ -40,12 +40,18 @@ const NaviLinkCarousel = () => {
         modules={[Navigation]}
         spaceBetween={10}
         slidesPerView={3}
-        navigation={true}
+        navigation={false}
         breakpoints={{
           620: { slidesPerView: 4 },
-          740: { slidesPerView: 5 },
-          1024: { slidesPerView: 8 },
-          2024: { slidesPerView: 10 },
+          740: { slidesPerView: 5 ,
+            navigation:true
+          },
+          1024: { slidesPerView: 8,
+            navigation:true
+           },
+          2024: { slidesPerView: 10,
+            navigation:true
+           },
         }}
         className="w-full"
       >
@@ -60,6 +66,7 @@ const NaviLinkCarousel = () => {
             </div>
           </SwiperSlide>
         ))}
+        
       </Swiper>
       
     </div>

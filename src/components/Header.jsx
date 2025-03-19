@@ -34,7 +34,7 @@ export default function Header() {
   const pageName = pathname?.split("/")?.filter(Boolean)?.[0];
 
   return (
-    <div className="sticky top-0 z-12 flex flex-row items-center justify-between gap-3 overflow-hidden h-14 px-1 md:px-5 bg-white dark:bg-black ">
+    <div className="sticky top-0 z-12 flex flex-row items-center justify-between gap-3 overflow-hidden h-14 px-1 md:px-5 bg-black dark:bg-black ">
       {loading && <Loader />}
       <div className="flex h-5 items-center gap-x-1">
         {pageName !== "video" && (
