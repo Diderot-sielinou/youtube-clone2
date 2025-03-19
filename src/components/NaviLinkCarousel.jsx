@@ -6,33 +6,22 @@ import "swiper/css/navigation";
 
 const NaviLinkCarousel = () => {
   const categoriesList = [
-    "Trending Music",
-    "Music",
-    "Films",
-    "Live",
-    "Gaming",
-    "category",
-    "News",
-    "Sports",
-    "Learning",
-    "Trending",
-    "Music",
-    "Films",
-    "Live",
-    "Gaming",
-    "category",
-    "News",
-    "Sports",
-    "Learning",
-    "Trending",
-    "Music",
-    "Films",
-    "Live",
-    "Gaming",
-    "category",
-    "News",
-    "Sports",
-    "Learning",
+    "All",
+    "JavaScript",
+    "TypeScript",
+    "Programming",
+    "Travelling",
+    "Cricket World Cup 2023",
+    "Bowling",
+    "Cricket",
+    "React",
+    "Next.js",
+    "UI/UX Design",
+    "Object Oriented Programming",
+    "Frontend Web Development",
+    "Backend Web Development",
+    "Web Development",
+    "Coding",
   ];
   return (
     <div className="w-full relative ">
@@ -43,15 +32,9 @@ const NaviLinkCarousel = () => {
         navigation={false}
         breakpoints={{
           620: { slidesPerView: 4 },
-          740: { slidesPerView: 5 ,
-            navigation:true
-          },
-          1024: { slidesPerView: 8,
-            navigation:true
-           },
-          2024: { slidesPerView: 10,
-            navigation:true
-           },
+          740: { slidesPerView: 5, navigation: true },
+          1024: { slidesPerView: 8, navigation: true },
+          2024: { slidesPerView: 10, navigation: true },
         }}
         className="w-full"
       >
@@ -66,9 +49,7 @@ const NaviLinkCarousel = () => {
             </div>
           </SwiperSlide>
         ))}
-        
       </Swiper>
-      
     </div>
   );
 };
