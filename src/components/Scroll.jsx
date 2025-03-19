@@ -43,7 +43,7 @@ export function Scroll() {
                     <button
                         key={category}
 
-                        className={index===0?` flex items-center px-3 rounded-lg whitespace-nowrap text-center  overflow-hidden     lowercase cursor-pointer h-7 bg-white text-black   mb-[1px]  hover:bg-white/50`:` flex items-center px-3 rounded-lg whitespace-nowrap text-center  overflow-hidden lowercase cursor-pointer h-7 bg-white/20   mb-[1px]  hover:bg-white/50`}>
+                        className={index===0?` flex items-center px-3 rounded-lg whitespace-nowrap text-center  overflow-hidden     lowercase cursor-pointer h-7 bg-white text-black   mb-[1px]  hover:bg-white/50`:` flex items-center px-3 rounded-lg whitespace-nowrap text-center  overflow-hidden lowercase cursor-pointer h-7 bg-white/20   mb-[1px]  hover:bg-white/50 text-white`}>
                         {category}
                     </button>
                 ))}
@@ -53,7 +53,7 @@ export function Scroll() {
 
             {isLeftVisible && (
                 <div className="absolute left-0 top-1/2 -translate-y-1/2 bg-gradient-to-r from-black from-50% to-transparent w-24 h-full">
-                    <button  className="h-full aspect-square w-auto "
+                    <button  className="h-full aspect-square w-auto text-white "
                         onClick={() => {
                             setTranslate(translate => {
                                 const newTranslate = translate - TRANSLATE_AMOUNT
@@ -69,7 +69,7 @@ export function Scroll() {
 
             {isRightVisible && (
                 <div className="absolute right-0 top-1/2 -translate-y-1/2 bg-gradient-to-l from-black from-50% to-transparent w-24 h-full flex justify-end">
-                    <button  className="h-full aspect-square w-auto "
+                    <button  className="h-full aspect-square w-auto  text-white"
                         onClick={() => {
                             setTranslate(translate => {
                                 if (containerRef.current == null) {
