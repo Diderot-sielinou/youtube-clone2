@@ -4,7 +4,6 @@ import { Context } from "../context/contextApi";
 import LeftNav from "./LeftNav";
 import VideoCard from "./VideoCard";
 import ResponsiveCarousel from "./Responsive";
-import NaviLinkCarousel from "./NaviLinkCarousel";
 import { Scroll } from "./Scroll";
 export default function Feed() {
   const { loading, searchResults } = useContext(Context);

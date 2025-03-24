@@ -88,7 +88,7 @@ export default function Header() {
             <FiBell className="text-white text-xl cursor-pointer" />
           </div>
         </div>
-        <div className="flex h-8 w-8 overflow-hidden rounded-full md:ml-4 hover:scale-140  ">
+        <div className="flex h-8 w-8 overflow-hidden rounded-full md:ml-4 hover:scale-140 md:pr-2  ">
           <img className="hover:scale-130 overflow-hidden" src="https://media.licdn.com/dms/image/v2/D4E35AQH-CoADyzin1g/profile-framedphoto-shrink_200_200/B4EZWGDORhHMAc-/0/1741710747037?e=1742317200&v=beta&t=yacoef4uZ1zxdEVjaBYuxWzlAt12NgFLsDwKFMiyPAY" />
         </div>
       </div>
