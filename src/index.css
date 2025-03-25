@@ -72,3 +72,56 @@ code {
       height: 100vh !important;
   }
 }
+
+
+
+/* Largeur de la scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;  /* Pour un scroll vertical */
+
+}
+
+/* Fond de la scrollbar */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #000000; 
+  border-radius: 10px;
+}
+
+/* Curseur (thumb) de la scrollbar */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent; /* Bleu */
+  border-radius: 10px;
+}
+
+/* Au survol */
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: #a4a4a5;
+}
+
+.item {
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
+
+/* Taille et apparence */
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icônes plus grandes */
+
+
+/* Effet au survol */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

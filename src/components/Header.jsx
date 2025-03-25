@@ -34,7 +34,7 @@ export default function Header() {
   const pageName = pathname?.split("/")?.filter(Boolean)?.[0];
 
   return (
-    <div className="sticky top-0 z-12 flex flex-row items-center justify-between gap-3 overflow-hidden h-14 px-1 md:px-5 bg-white dark:bg-black ">
+    <div className="sticky top-0 z-12 flex flex-row items-center justify-between gap-3 overflow-hidden h-14 px-1 md:px-5 bg-black dark:bg-black ">
       {loading && <Loader />}
       <div className="flex h-5 items-center gap-x-1">
         {pageName !== "video" && (
@@ -88,8 +88,8 @@ export default function Header() {
             <FiBell className="text-white text-xl cursor-pointer" />
           </div>
         </div>
-        <div className="flex h-8 w-8 overflow-hidden rounded-full md:ml-4 hover:scale-140  ">
-          <img className="hover:scale-130 overflow-hidden" src="https://media.licdn.com/dms/image/v2/D4E35AQH-CoADyzin1g/profile-framedphoto-shrink_200_200/B4EZWGDORhHMAc-/0/1741710747037?e=1742317200&v=beta&t=yacoef4uZ1zxdEVjaBYuxWzlAt12NgFLsDwKFMiyPAY" />
+        <div className="flex h-8 w-8 overflow-hidden rounded-full md:ml-4 hover:scale-140 md:pr-2  ">
+          <img className="hover:scale-130 overflow-hidden" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3B6FQ9sBHc8OXv6tYebDhxBhWgtcK6HWGMQ&s" />
         </div>
       </div>
     </div>
